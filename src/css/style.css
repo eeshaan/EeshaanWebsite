@@ -1,0 +1,25 @@
+#top, div {
+    display: block; 
+}
+
+#top img {
+    left: 25%;
+    top: 10%;
+}
+
+#top h1 {
+    color: #be3131;
+    right: 20%;
+    top: 200px;
+    text-align: center;
+    font-size: 120px;
+    position: fixed;
+    
+}
+
+body {
+    background: #d2c256;
+    font-family: Lato;
+    text-align: center;
+}
+
