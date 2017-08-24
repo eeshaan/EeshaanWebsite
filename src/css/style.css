@@ -1,25 +1,109 @@
-#top, div {
-    display: block; 
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+body {
+    background: #ccb74b;
+    font-family: Lato;
+    text-align: center;
 }
 
-#top img {
-    left: 25%;
-    top: 10%;
+#top {
+    display: inline-block;
+    margin-top: 100px;
 }
 
 #top h1 {
     color: #be3131;
-    right: 20%;
-    top: 200px;
-    text-align: center;
+    display: inline-block; /*I know this code is repetitive, but it won't display properly without it*/
+    width: 49%;
     font-size: 120px;
-    position: fixed;
-    
 }
 
-body {
-    background: #d2c256;
-    font-family: Lato;
-    text-align: center;
+#intro {
+    font-size: 20px;
+    margin-bottom: -40px;
+}
+
+#name {
+    font-variant: small-caps;
+    font-size: 60px;
+    margin-bottom: 0px;
+}
+
+#sub {
+    margin-bottom: 2cm;
+}
+
+#bottom {
+    margin-top: 125px;
+    margin-bottom: 50px;
+}
+
+#desc {
+    font-size: 30px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+#about {
+    font-size: 40px;
+    margin-bottom: -10px;
+}
+
+#what {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+ul {
+    font-size: 25px;
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 45px;
+}
+
+/*Animations!*/
+
+.animate-left {
+    position: relative;
+    animation: animateleft 1.4s;
+}
+
+.animate-right {
+    position: relative;
+    animation: animateright 1.4s;
+}
+
+.fade {
+    animation: opac 4s;
+}
+
+@keyframes animateleft {
+    0% {
+        left: -1000px;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes animateright {
+    0% {
+        right: -1000px;
+        opacity: 0;
+    }
+
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes opac {
+    from {opacity:0} 
+    to {opacity:1}
 }
 
